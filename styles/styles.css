@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f0f0;
+    color: #0a0a0a;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
