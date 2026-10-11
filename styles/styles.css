@@ -1,7 +1,21 @@
+/* ==========
+   Palette (reference)
+   Text:     #0a0a0a
+   Bg:       #f0f0f0
+   Hover:    #e4e4e4  (row shade)
+   Line:     #e0e0e0  (hairlines)
+   Muted:    #6b6b6b  (small labels, coming soon)
+   ========== */
+
+/* ==========
+   Base
+   ========== */
+
+/* Typography */
 body {
     background-color: #f0f0f0;
     color: #0a0a0a;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
 }
 
@@ -11,8 +25,68 @@ h3 {
     line-height: 1.2;
 }
 
+/* Links */
 a {
     color: #0a0a0a;
     text-decoration: none;
 }
 
+/* ==========
+   Layout
+   ========== */
+
+/* ==========
+   Components
+   ========== */
+
+/* Header */
+
+/* Main: About */
+
+/* Main: Projects */
+.project-group {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-group h3 {
+    width: 8rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b6b6b;
+}
+
+.project-group ul {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-group a {
+    display: block;
+    padding: 1rem 0;
+}
+
+/* Shade the row on hover */
+.project-group:hover {
+    background-color: #e4e4e4;
+}
+
+.project-group:hover h3 {
+    color: #0a0a0a;
+}
+
+/* Clear outline for keyboard users */
+.project-group a:focus-visible {
+    outline: 2px solid #0a0a0a;
+    outline-offset: 4px;
+}
+
+/* Footer */
