@@ -13,6 +13,7 @@
 
 /* Typography */
 body {
+    margin: 0;
     background-color: #f0f0f0;
     color: #0a0a0a;
     font-family: 'Courier New', Courier, monospace;
@@ -23,6 +24,16 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
+}
+
+/* Section labels (About, Projects) */
+main h2 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b6b6b;
 }
 
 /* Links */
@@ -40,10 +51,41 @@ a {
    ========== */
 
 /* Header */
+header {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 12vw, 6rem);
+    letter-spacing: -0.02em;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b6b6b;
+}
 
 /* Main: About */
+.about {
+    padding: 4rem 1rem;
+}
+
+.about p {
+    max-width: 40rem;
+    margin: 0;
+}
 
 /* Main: Projects */
+.projects h2 {
+    margin: 0;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 .project-group {
     display: flex;
     align-items: baseline;
@@ -90,3 +132,36 @@ a {
 }
 
 /* Footer */
+footer {
+    padding: 4rem 1rem 1rem;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b6b6b;
+}
+
+/* ==========
+   Desktop (800px and up)
+   ========== */
+@media (min-width: 50em) {
+    header,
+    .about,
+    .projects h2,
+    .project-group,
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .about {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .project-group h3 {
+        width: 16rem;
+    }
+}
