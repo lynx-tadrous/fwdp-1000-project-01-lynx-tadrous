@@ -4,7 +4,7 @@
    Bg:       #f0f0f0
    Hover:    #e4e4e4  (row shade)
    Line:     #e0e0e0  (hairlines)
-   Muted:    #6b6b6b  (small labels, coming soon)
+   Muted:    #5f5f5f  (small labels, coming soon)
    ========== */
 
 
@@ -30,7 +30,7 @@ main h2 {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #6b6b6b;
+    color: #5f5f5f;
 }
 
 /* Links */
@@ -55,7 +55,7 @@ header p {
     margin: 0.5rem 0 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #6b6b6b;
+    color: #5f5f5f;
 }
 
 /* Main: About */
@@ -90,7 +90,7 @@ header p {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #6b6b6b;
+    color: #5f5f5f;
 }
 
 .project-group ul {
@@ -106,7 +106,7 @@ header p {
 }
 
 .project-group a span {
-    color: #6b6b6b;
+    color: #5f5f5f;
 }
 
 /* Shade the row on hover */
@@ -138,7 +138,7 @@ footer p {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #6b6b6b;
+    color: #5f5f5f;
 }
 
 /* ==========
