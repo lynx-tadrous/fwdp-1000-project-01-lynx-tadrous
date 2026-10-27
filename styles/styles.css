@@ -24,6 +24,7 @@ body {
 h1,
 h2,
 h3 {
+    font-family: 'roboto'
     line-height: 1.2;
 }
 
@@ -81,9 +82,14 @@ header p {
 }
 
 /* Main: Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
 .projects h2 {
-    margin: 0;
-    padding: 0 1rem 1rem;
+    grid-column: 1 / -1;
     border-bottom: 1px solid #e0e0e0;
 }
 
